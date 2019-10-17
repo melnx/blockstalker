@@ -5,7 +5,7 @@ class Blockwatcher{
   constructor(){
     this.config = {};
     this.rpcs = [];//['http://localhost:8545','http://localhost:8546']; //, 'http://localhost:8546'
-    this.token_addresses = [];//['0x91f1dae23760773d46c888b5c97c508ad4fef2fc','0xc45c14b747f44e997a5b17657635db0e9699411f'];
+    this.contract_addresses = [];//['0x91f1dae23760773d46c888b5c97c508ad4fef2fc','0xc45c14b747f44e997a5b17657635db0e9699411f'];
 
     this.webs = [];
     this.contracts = [];
@@ -109,7 +109,7 @@ class Blockwatcher{
       }
     ]
 
-    this.contracts = this.webs.map((web3,n) => new web3.eth.Contract(abi, this.token_addresses[n]))
+    this.contracts = this.webs.map((web3,n) => new web3.eth.Contract(abi, this.contract_addresses[n]))
   }
 
   docall(call){
@@ -190,7 +190,7 @@ class Blockwatcher{
   blockwatch(config, cb){
     this.config = config;
     this.rpcs = config.chains.map(x => x.rpc);
-    this.token_addresses = config.chains.map(x => x.token);
+    this.contract_addresses = config.chains.map(x => x.contract);
 
     this.init();
 

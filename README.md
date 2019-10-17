@@ -6,7 +6,7 @@ watcher.blockwatch({
     {
       type: "ethereum",
       rpc: 'http://localhost:8545',
-      token: '0x91f1dae23760773d46c888b5c97c508ad4fef2fc',
+      contract: '0x91f1dae23760773d46c888b5c97c508ad4fef2fc',
       keys: {
         privateKey: '0x37f434a88197daba1d8862fefebbc9079a69b48348c46a06dd9406e758e27013',
         address: '0x8fcfad0d6f6eee7bff3727a96fdbe5ea10c9d976'
@@ -15,7 +15,7 @@ watcher.blockwatch({
     {
       type: "ethereum",
       rpc: 'http://localhost:8546',
-      token: '0xc45c14b747f44e997a5b17657635db0e9699411f',
+      contract: '0xc45c14b747f44e997a5b17657635db0e9699411f',
       keys: {
         privateKey: '0x579493c50f76741a3a30691b8c9670389b9ab7df6a445462a2e5017696f429bd',
         address: '0xc6735454e31c6c4c7bf5bca9e456a8491ec25d11'
