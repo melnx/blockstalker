@@ -1,0 +1,23 @@
+{
+  "name": "blockstalker",
+  "version": "1.0.0",
+  "description": "``` var watcher = new Blockwatcher();",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melnx/blockstalker.git"
+  },
+  "author": "melnx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melnx/blockstalker/issues"
+  },
+  "homepage": "https://github.com/melnx/blockstalker#readme",
+  "dependencies": {
+    "cote": "^0.21.1",
+    "web3": "^1.2.1"
+  }
+}
