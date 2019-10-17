@@ -1,7 +1,7 @@
 ```
 var watcher = new Blockwatcher();
 
-watcher.blockwatch({
+watcher.eventwatch({
   chains:[
     {
       type: "ethereum",

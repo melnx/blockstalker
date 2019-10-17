@@ -2,7 +2,7 @@ var Blockwatcher = require('./index.js');
 
 var watcher = new Blockwatcher();
 
-watcher.blockwatch({
+watcher.eventwatch({
   chains:[
     {
       type: "ethereum",

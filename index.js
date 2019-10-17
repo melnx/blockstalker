@@ -187,7 +187,7 @@ class Blockwatcher{
     this.subevents(n, cb)
   }
 
-  blockwatch(config, cb){
+  eventwatch(config, cb){
     this.config = config;
     this.rpcs = config.chains.map(x => x.rpc);
     this.contract_addresses = config.chains.map(x => x.contract);
